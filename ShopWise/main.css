@@ -12,7 +12,7 @@ a:hover {
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+    display: block !important;
     margin-top: 0;
 
 }
@@ -44,10 +44,8 @@ a:hover {
     /* Adjust the value to position the dropdown */
 }
 .closeBtn{
-    font-size: 15px;
-    color: black !important;
+    font-size: 25px;
+    color: black;
+    margin-top: -56px;
 }
 
-/* .dropdown:hover .dropdown-menu {
-    display: block;
-} */
