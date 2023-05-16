@@ -28,11 +28,11 @@
 
 </head>
 
-<body>
+<body id="checkout">
     <!-- nav  start-->
     <header>
         <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-top ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white ">
             <div class="container">
                 <a class="navbar-brand fs-2 fw-bold " href="#"><i class="fa fa-cart-shopping fs-2"
                         style="color: #f54242;"></i><span class="textBlur">Shopwise</span></a>
@@ -52,7 +52,7 @@
                                 home
                             </a>
                             <ul class="dropdown-menu  " aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item " href="#">Fashion 1</a></li>
+                                <li><a class="dropdown-item " href="shop.html">Fashion 1</a></li>
                                 <li><a class="dropdown-item" href="#">Fashion 2</a></li>
                                 <li><a class="dropdown-item" href="#">furniture 1</a></li>
                                 <li><a class="dropdown-item" href="#">furniture 2</a></li>
@@ -190,87 +190,129 @@
     </header>
     <!-- nav End-->
 
-    <section id="checkout">
+    <section >
         <div class="container mt-5">
             <div class="row">
-              
                 <!-- Billing Address -->
-               <div class="col-8 ">
-                <h4>Billing Address</h4>
-                <div class="row">
-                    <div class="col-6">
-                        <input type="text" placeholder="First Name " class="form-control m-2">
-                    </div>
-                    <div class="col-6">
-                        <input type="text" placeholder="First Name " class="form-control m-2">
-                    </div>
-                    <div class="col-6">
-                        <select name="" id="" class="form-select m-2">
-                            <option value="">Select Contry</option>
-                            <option value="">India</option>
-                        </select>
-                    </div>
-                    <div class="col-6">
-                        <input type="text" placeholder="Address " class="form-control m-2">
-                    </div>
-                    <div class="col-6">
-                        <input type="text" placeholder="Apartment,street Number.. etc " class="form-control m-2">
-                    </div>
-                    <div class="col-6">
-                        <input type="text" placeholder="City " class="form-control m-2">
-                    </div>
-                    <div class="col-6">
-                        <input type="text" placeholder="Pincode " class="form-control m-2">
-                    </div>
-                    <div class="col-6">
-                        <input type="text" placeholder="Phone Number " class="form-control m-2">
-                    </div>
-                    <div class="col-6">
-                        <input type="email" placeholder="Email address " class="form-control m-2">
-                    </div>
-                    <div class="col-6">
-                        <input type="checkbox" class=" m-2"><span>Ship to a diffrernt Address ?</span>
-                    </div>
-                    <div class="col-12">
-                        <textarea class="form-control m-2" placeholder="Notes About Your Order"></textarea>
-                    </div>
-                </div>
-               </div>
-               <!-- Your Order -->
-               <div class="col-4">
-                <h4>Your Order</h4>
-                <div class="border-top d-flex mt-2">
-                    <img class="img-fluid h-25 w-25 p-2 " src="../ShopWise/product img/cartImg1.jfif" alt="">
-                    <div class="ps-3">
-                        <p class="p-0 m-0 fw-semibold">Varibale Product 001</p>
-                        <p class="p-0 m-0">$78.00</p>
-                        <p class="text-start mt-4"><button class="btn">QTY : 1</button></p>
+                <div class="col-8 ">
+                    <div class="card shadow">
+                        <div class="card-header bg-danger bg-opacity-25">
+                            <h4>Billing Address</h4>
+                        </div>
+                        <div class="card-body mb-5">
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" placeholder="First Name " class="form-control m-2">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" placeholder="First Name " class="form-control m-2">
+                                </div>
+                                <div class="col-6">
+                                    <select name="" id="" class="form-select m-2">
+                                        <option value="">Select Contry</option>
+                                        <option value="">India</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" placeholder="Address " class="form-control m-2">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" placeholder="Apartment,street Number.. etc "
+                                        class="form-control m-2">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" placeholder="City " class="form-control m-2">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" placeholder="Pincode " class="form-control m-2">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" placeholder="Phone Number " class="form-control m-2">
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" placeholder="Email address " class="form-control m-2">
+                                </div>
+                                <div class="col-6">
+                                    <input type="checkbox" class=" m-2"><span>Ship to a diffrernt Address ?</span>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control m-2" placeholder="Notes About Your Order"></textarea>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-                <div class="border-top d-flex mt-2">
-                    <img class="img-fluid h-25 w-25 p-2 " src="../ShopWise/product img/cartImg2.jfif" alt="">
-                    <div class="ps-3">
-                        <p class="p-0 m-0 fw-semibold">Ornare consequat</p>
-                        <p class="p-0 m-0">$81.00</p>
-                        <p class="text-start mt-4"><button class="btn">QTY : 1</button></p>
+                <!-- Your Order -->
+
+                <div class="col-4">
+                    <div class="card shadow ">
+                        <div class="card-header  bg-danger bg-opacity-25">
+                            <h4>Your Order</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="border-top d-flex mt-2">
+                                <img class="img-fluid h-25 w-25 p-2 " src="../ShopWise/product img/cartImg1.jfif" alt="">
+                                <div class="ps-3">
+                                    <p class="p-0 m-0 fw-semibold">Varibale Product 001</p>
+                                    <p class="p-0 m-0">$78.00</p>
+                                    <p class="text-start mt-4"><button class="btn">QTY : <b>1</b> </button></p>
+                                </div>
+    
+                            </div>
+                            <div class="border-top d-flex mt-2">
+                                <img class="img-fluid h-25 w-25 p-2 " src="../ShopWise/product img/cartImg2.jfif" alt="">
+                                <div class="ps-3">
+                                    <p class="p-0 m-0 fw-semibold">Ornare consequat</p>
+                                    <p class="p-0 m-0">$81.00</p>
+                                    <p class="text-start mt-4"><button class="btn">QTY : <b>1</b></button></p>
+                                </div>
+    
+                            </div>
+                            <div class="border-top ">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <p class="fw-semibold">SubTotal</p>
+                                    <p class="fw-semibold">$159.00</p>
+    
+                                </div>
+    
+                                <div class="  ">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="">Shipping Flat Rate :</p>
+                                        <p class="fw-semibold">$10.00</p>
+    
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col-10 d-flex justify-content-between">
+    
+                                        <input type="text" placeholder="Coupon Code"
+                                            class="form-control border border-1 mt-2 border-dark">
+                                    </div>
+                                </div>
+                                <div class=" border-top ">
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <p class="fw-semibold">Total :</p>
+                                        <p class="fw-semibold">$169.00</p>
+    
+                                    </div>
+                                </div>
+                                <div class=" row border-top ">
+                                    <div class=" col-12 text-center mt-2">
+                                        <div class="w-100 bg-black">
+                                            <button class="btn text-white rounded-0 ">Place Order</button>
+                                        </div>
+    
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-
                 </div>
-                <div class="border-top ">
-                   <div class="d-flex justify-content-between">
-                    <p class="fw-semibold">SubTotal</p>
-                    <p class="fw-semibold">$159.00</p>
-
-                   </div>
-                   <div>
-                    <label>Cupon</label>
-                    <span><input type="text" class=""></span>
-                   </div>
-                </div>
-               </div>
             </div>
-        </div>
 
     </section>
 
