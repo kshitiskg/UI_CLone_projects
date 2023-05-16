@@ -17,7 +17,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-   
+
 </head>
 
 <body>
@@ -43,7 +43,7 @@
                                 id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 home
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Option</a></li>
                                 <li><a class="dropdown-item" href="#">Option</a></li>
 
@@ -106,15 +106,62 @@
                             <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass fs-5"
                                     style="color: #0c0d0d;"></i></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-cart-shopping fs-5"
-                                    style="color: #202122;"></i></i>
+                        <li class="nav-item dropdown position-relative d-inline-block ">
+                            <a class="nav-link" href="#"><i class="fa fa-cart-shopping fs-5 "
+                                    style="color: #202122;"></i>
                                 <span class="position-absolute  translate-middle badge rounded-pill bg-danger">
                                     2
                                     <span class="visually-hidden">unread messages</span>
                                 </span>
                             </a>
+
+                            <ul class="dropdown-menu  menuOnLeft rounded-0 mt-2" aria-labelledby="navbarDropdown" >
+                                <li class="p-2">
+                                  
+                                    <div class="d-flex w-100 border-bottom justify-content-evenly">
+                                        <img class="img-fluid h-25 w-25 p-2" src="../ShopWise/product img/cartImg1.jfif" alt="">
+
+                                        <div>
+                                           <a href="#" class="text-decoration-none text-black fw-semibold"> <p class="m-0 p-0">Varibale Product 001</p></a>
+                                            <p class="m-0 p-0">1 <i class="fa-solid fa-xmark" style="color: #0d0d0d;"></i> $ 78.00</p>
+                                        </div>
+                                        <button type="button" class="btn-close  btn-outline-dark closeBtn" aria-label="Close"></button>
+                                    </div>
+                                  
+                                </li>
+                                <li class="p-2">
+                                    <div class="d-flex w-100 border-bottom justify-content-evenly">
+                                      
+                                            <img class="img-fluid h-25 w-25 p-2" src="../ShopWise/product img/cartImg2.jfif" alt="">
+                                        
+
+                                        <div>
+                                           <a href="#"  class="text-decoration-none text-black fw-semibold"> <p class="m-0 p-0">Ornare sed consequat</p></a>
+                                            <p class="m-0 p-0">1 <i class="fa-solid fa-xmark" style="color: #0d0d0d;"></i> $ 81.00</p>
+                                        </div>
+                                      
+                                            <button type="button" class="btn-close  btn-outline-dark closeBtn" aria-label="Close"></button>
+                                        
+                                    </div>
+                                </li>
+                                <li class="p-2"> 
+                                    <div class=" w-100 ">
+                                       <div class="d-flex justify-content-between">
+                                        <h6>SubTotal :</h6>
+                                        <h6>$159.00</h6>
+                                       </div>
+                                      <div class="d-flex justify-content-evenly mt-2">
+                                        <button class="btn btn-dark rounded-0 px-3">View Cart</button>
+                                        <button class="btn btn-danger rounded-0 px-3">Checkout</button>
+                                      </div>
+                                       
+                                    </div>
+                                </li>
+                            </ul>
+
                         </li>
+
+
 
                     </ul>
 
@@ -132,10 +179,13 @@
                         <h2 class="mb-3">Exclusive Products</h2>
 
                         <ul class="list-unstyled d-flex   justify-content-center ">
-                            <li><a href="#" class=" m-4  text-decoration-none text-danger fw-semibold  ">New Arrival</a></li>
-                            <li><a href="#" class=" m-4  text-decoration-none fw-semibold text-black">Best Sellers</a></li>
+                            <li><a href="#" class=" m-4  text-decoration-none text-danger fw-semibold  ">New Arrival</a>
+                            </li>
+                            <li><a href="#" class=" m-4  text-decoration-none fw-semibold text-black">Best Sellers</a>
+                            </li>
                             <li><a href="#" class=" m-4  text-decoration-none fw-semibold text-black">Featured</a></li>
-                            <li><a href="#" class=" m-4  text-decoration-none fw-semibold text-black ">Special Offer</a></li>
+                            <li><a href="#" class=" m-4  text-decoration-none fw-semibold text-black ">Special Offer</a>
+                            </li>
                         </ul>
 
 
@@ -147,41 +197,45 @@
                         <div class="col-lg-3">
                             <div class="box-shadow">
                                 <div class="card">
-                                    <img class="img-fluid" src="../ShopWise/product img/blueDressImg.webp" class="card-img-top"
-                                        alt="...">
+                                    <img class="img-fluid" src="../ShopWise/product img/blueDressImg.webp"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Blue Dress For Woman</h5>
                                         <p class="card-text"><span
                                                 class="text-danger fw-semibold me-2">$45.00</span><del> $55.25</del>
-                                            <span class="text-success ms-2">35% Off</span></p>
+                                            <span class="text-success ms-2">35% Off</span>
+                                        </p>
                                         <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
                                         <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
                                         <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
                                         <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
                                         <span><i class="fa-solid fa-star-half-stroke  m-0"
                                                 style="color: #f1f50f;"></i></span>
-                                                <span class="text-muted">(21)</span>
+                                        <span class="text-muted">(21)</span>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="box-shadow">
                                 <div class="card">
-                                    <img class="img-fluid" src="../ShopWise/product img/greyMan.webp" class="card-img-top"
-                                        alt="...">
-                                       
+                                    <img class="img-fluid" src="../ShopWise/product img/greyMan.webp"
+                                        class="card-img-top" alt="...">
+
                                     <div class="card-body">
                                         <h5 class="card-title">Lether Gray Tuxedo</h5>
                                         <p class="card-text"><span
                                                 class="text-danger fw-semibold me-2">$55.00</span><del> $95.25</del>
-                                            <span class="text-success ms-2">25% Off</span></p>
-                                            <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
-                                            <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
-                                            <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
-                                            <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
-                                            <span><i class="fa-solid fa-star-half-stroke  m-0" style="color: #f1f50f;"></i></span>
-                                            <span class="text-muted">(15)</span>
+                                            <span class="text-success ms-2">25% Off</span>
+                                        </p>
+                                        <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
+                                        <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
+                                        <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
+                                        <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
+                                        <span><i class="fa-solid fa-star-half-stroke  m-0"
+                                                style="color: #f1f50f;"></i></span>
+                                        <span class="text-muted">(15)</span>
                                     </div>
                                 </div>
                             </div>
@@ -189,12 +243,12 @@
                         <div class="col-lg-3">
                             <div class="box-shadow">
                                 <div class="card">
-                                    <img class="img-fluid" src="../ShopWise/product img/fullsleeves.webp" class="card-img-top"
-                                        alt="...">
-                                        <div class="card-img-overlay">
-                                            <div class="bg-warning text-white w-25 text-center">New</div>
+                                    <img class="img-fluid" src="../ShopWise/product img/fullsleeves.webp"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-img-overlay">
+                                        <div class="bg-warning text-white w-25 text-center">New</div>
                                     </div>
-                                      
+
                                     <div class="card-body">
                                         <h5 class="card-title">Woman Full Sliv Dress</h5>
                                         <p class="card-text"><span
@@ -204,7 +258,8 @@
                                         <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
                                         <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
                                         <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
-                                        <span><i class="fa-solid fa-star-half-stroke  m-0" style="color: #f1f50f;"></i></span>
+                                        <span><i class="fa-solid fa-star-half-stroke  m-0"
+                                                style="color: #f1f50f;"></i></span>
                                         <span class="text-muted">(25)</span>
                                     </div>
                                 </div>
@@ -213,19 +268,21 @@
                         <div class="col-lg-3">
                             <div class="box-shadow">
                                 <div class="card">
-                                    <img class="img-fluid" src="../ShopWise/product img/lightblueshirt.jfif" class="card-img-top"
-                                        alt="...">
+                                    <img class="img-fluid" src="../ShopWise/product img/lightblueshirt.jfif"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Light Blue Shirt</h5>
                                         <p class="card-text"><span
                                                 class="text-danger fw-semibold me-2">$69.00</span><del> $89.25</del>
-                                            <span class="text-success ms-2">20% Off</span></p>
-                                            <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
-                                            <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
-                                            <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
-                                            <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
-                                            <span><i class="fa-solid fa-star-half-stroke  m-0" style="color: #f1f50f;"></i></span>
-                                            <span class="text-muted">(22)</span>
+                                            <span class="text-success ms-2">20% Off</span>
+                                        </p>
+                                        <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
+                                        <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
+                                        <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
+                                        <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
+                                        <span><i class="fa-solid fa-star-half-stroke  m-0"
+                                                style="color: #f1f50f;"></i></span>
+                                        <span class="text-muted">(22)</span>
                                     </div>
                                 </div>
                             </div>

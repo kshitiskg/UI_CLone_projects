@@ -17,6 +17,10 @@ a:hover {
 
 }
 
+.fa:hover {
+    color: red !important;
+}
+
 .box-shadow {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
 }
@@ -24,3 +28,26 @@ a:hover {
 .img-fluid {
     height: 300px !important;
 }
+
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+} */
+
+.menuOnLeft {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    left: -200px;
+    /* Adjust the value to position the dropdown */
+}
+.closeBtn{
+    font-size: 15px;
+    color: black !important;
+}
+
+/* .dropdown:hover .dropdown-menu {
+    display: block;
+} */
