@@ -23,13 +23,7 @@ body{
     overflow-y: auto;
     
 }
-/* @media (max-width: 575.98px) { 
-    .first-col{
-       
-        overflow-y: hidden !important;
-        
-    }
-} */
+
 .heading-hover :hover{
     background-color: rgb(194, 189, 189);
 }
@@ -49,10 +43,7 @@ body{
 .activity p{
     margin: 0;
 }
-.circle-div{
-    height: 50px;
-    width: 75px
-}
+
 .circle-div p{
     padding-bottom: 5px;
 }
@@ -94,3 +85,5 @@ label{
     font-weight: bold;
     color: grey;
 }
+
+
