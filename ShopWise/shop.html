@@ -112,7 +112,7 @@
                         </li>
                         <!-- cart -->
                         <li class="nav-item dropdown position-relative d-inline-block ">
-                            <a class="nav-link" href="#"><i class="fa fa-cart-shopping fs-5 "
+                            <a class="nav-link" href="#"><i class="fa fa-cart-shopping fs-5 me-1"
                                     style="color: #202122;"></i>
                                 <span class="position-absolute  translate-middle badge rounded-pill bg-danger">
                                     2
@@ -172,12 +172,133 @@
                             </ul>
 
                         </li>
+                        <li class="nav-item">
+                            <a class="  nav-link log_Reg_Border text-decoration-none text-black fw-semibold text-uppercase"
+                                href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" nav-link log_Reg_Border text-decoration-none text-black fw-semibold text-uppercase"
+                                href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">register</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <!-- nav End-->
+
+    <!-- login offcanvas -->
+    <div class="offcanvas offcanvas-end m-5" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Sign In</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <section class="ftco-section">
+                <div class="container">
+
+                    <div class="row ">
+                        <div class="col-md-7 col-lg-12">
+                            <div class="wrap">
+                                <div class="img" style="background-image: url(images/bg-1.jpg);"></div>
+                                <div class="login-wrap ">
+                                    
+                                    <form action="#" class="signin-form">
+                                        <div class="form-group mt-3">
+                                            <input type="text" class="form-control" required>
+                                            <label class="form-control-placeholder" for="username">Username</label>
+                                        </div>
+                                        <div class="form-group mt-4">
+                                            <input id="password-field" type="password" class="form-control" required>
+                                            <label class="form-control-placeholder" for="password">Password</label>
+                                            <span toggle="#password-field"
+                                                class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit"
+                                                class=" my-4 form-control btn btn-primary rounded submit px-3">Sign
+                                                In</button>
+                                        </div>
+                                        <div class="form-group d-md-flex">
+                                            <div class="w-50 text-left">
+                                                <label class="checkbox-wrap checkbox-primary mb-0">Remember Me
+                                                    <input type="checkbox" checked>
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="w-50 text-md-right">
+                                                <a href="#">Forgot Password</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <p class="text-center mt-4">Not a member? <a data-toggle="tab" href="#signup">Sign
+                                            Up</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- register model -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 my-2">
+                        <input type="text" class="form-control" >
+                        <label for="">Full Name</label>
+                    </div>
+                    <div class="col-12 my-2">
+                        <input type="text" class="form-control" >
+                        <label for="">Set Username</label>
+                    </div>
+                    <div class="col-12 my-2">
+                        <input type="password" class="form-control" >
+                        <label for="">Set Password</label>
+                    </div>
+                    <div class="col-12 my-2">
+                        <input type="email" class="form-control">
+                        <label for="">E-mail Id</label>
+                    </div>
+                    <div class="col-12 my-2">
+                        <input type="date" class="form-control">
+                        <label for="">DOB</label>
+                    </div>
+                    <div class="col-12 my-2">
+                        <input type="number" class="form-control">
+                        <label for="">Conatct Number</label>
+                    </div>
+                   
+                    <div class="col-12 my-2">
+                        <input type="radio" name="gender" id=""><label for="">Male</label>
+                        <input type="radio" name="gender" id=""><label for="">Female</label>
+                    </div>
+                    <div class="col-12 my-2">
+                        <textarea name="" id="" class="form-control"></textarea>
+                        <label for="">Full Address</label>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <section id="product">
         <div class="container">

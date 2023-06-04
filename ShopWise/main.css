@@ -16,6 +16,12 @@ a:hover {
     margin-top: 0;
 
 }
+.log_Reg_Border{
+    border: 1px solid pink;
+    border-radius: 20%;
+    margin-left: 10px;
+  
+}
 
 .fa:hover {
     color: red !important;
@@ -57,3 +63,10 @@ a:hover {
     }
     
 }
+/* login */
+img {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20%;
+  }
+  
